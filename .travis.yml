@@ -5,6 +5,8 @@ branches:
   only:
     - master
     - production
+cache:
+  bundler: true
 env:
   - MONEY_RAILS_VERSION=1.6.2
   - MONEY_RAILS_VERSION=1.6.1

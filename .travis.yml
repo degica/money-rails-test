@@ -1,0 +1,10 @@
+language: ruby
+rvm:
+- 2.4.1
+branches:
+  only:
+    - master
+    - production
+env:
+  - MONEY_RAILS_VERSION=1.6.2
+  - MONEY_RAILS_VERSION=1.6.1

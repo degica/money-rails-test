@@ -52,4 +52,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'money-rails', '1.6.2'
+if ENV['MONEY_RAILS_VERSION'] == '1.6.2'
+  gem 'money-rails', '1.6.2'
+else
+  gem 'money-rails', '1.6.1'
+end
